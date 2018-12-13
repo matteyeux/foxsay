@@ -1,0 +1,23 @@
+#!/bin/bash
+# ascii art by Todd Vargo
+
+if [[ $# != 1 ]]; then
+ 	echo "usage : $0 [what ever you want]"
+ 	exit 1
+fi
+
+arg=$1
+
+echo " < $1 >"
+echo -n "   ";
+for((i=1;i<=${#arg};i++)); do echo -n "-"; done
+echo ""
+echo "    \\      /\   /\\"
+echo "     \\    //\\\\_//\\\\     ____"
+echo "      \\   \_     _/    /   /"
+echo "       \\   / * * \    /^^^]"
+echo "           \_\O/_/    [   ]"
+echo "           /   \_    [   /"
+echo "           \     \_  /  /"
+echo "            [ [ /  \/ _/"
+echo "           _[ [ \  /_/"
