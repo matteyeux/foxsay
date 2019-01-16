@@ -7,7 +7,9 @@ if [[ $# != 1 ]]; then
 fi
 
 arg=$1
-
+echo -n "   "
+for((i=1;i<=${#arg};i++)); do echo -n "_"; done
+echo ""
 echo " < $1 >"
 echo -n "   ";
 for((i=1;i<=${#arg};i++)); do echo -n "-"; done
